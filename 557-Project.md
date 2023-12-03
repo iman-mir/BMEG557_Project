@@ -15,7 +15,7 @@ library(BSDA)
     ## 
     ##     Orange
 
-## Number (Percentage) of Participants Reporting a ≥ 50% Reduction in Headache Days based on counts fisher test
+## Outcome \#1: Number (Percentage) of Participants Reporting a ≥ 50% Reduction in Headache Days Code (Fisher Test)
 
 ``` r
 # For Topiramate vs Placebo
@@ -93,7 +93,7 @@ print(fisher_result_together)
     ## odds ratio 
     ##  0.8826991
 
-## Changes in Absolute Headache Disability Score on PEDIMAS based on mean doing two sample ttest
+## Outcome \#2: Changes in Absolute Headache Disability Score on PEDIMAS Code (two sample ttest)
 
 ``` r
 # Data for Topiramate
@@ -194,7 +194,7 @@ tsum.test(
     ## mean of x mean of y 
     ##     -26.8     -22.5
 
-## Change in number of heachade days two sample ttest
+## Outcome \#3: Change in number of headache days Code (two sample ttest)
 
 ``` r
 # Data for Topiramate
@@ -295,7 +295,7 @@ tsum.test(
     ## mean of x mean of y 
     ##      -6.7      -6.7
 
-## Tolerability as Indicated by the Percentage of Participants that Completed the 24 weeks treatment Phase, doing fisher test
+## Outcome \#4: Tolerability as Indicated by the Percentage of Participants that Completed the 24 weeks Treatment Phase Code (Fisher Test)
 
 ``` r
 # For Topiramate vs Placebo 
@@ -373,7 +373,7 @@ print(fisher_result_together)
     ## odds ratio 
     ##   1.118673
 
-## Occurence of Treatment Emergent Serious Adverse Effects fisher test
+## Outcome 5: Occurence of Treatment Emergent Serious Adverse Effects Code (Fisher Test)
 
 ``` r
 # For Topiramate vs Placebo 

@@ -7,7 +7,8 @@ library(tibble)
 library(BSDA)
 ```
 
-## Number (Percentage) of Participants Reporting a ≥ 50% Reduction in Headache Days based on counts  fisher test 
+## Outcome #1: Number (Percentage) of Participants Reporting a ≥ 50% Reduction in Headache Days Code (Fisher Test)
+
 
 ```{r setup}
 
@@ -51,7 +52,7 @@ print(fisher_result_together)
 ```
 
 
-## Changes in Absolute Headache Disability Score on PEDIMAS based on mean doing two sample ttest 
+## Outcome #2: Changes in Absolute Headache Disability Score on PEDIMAS Code (two sample ttest)
 
 ```{r}
 
@@ -115,7 +116,8 @@ tsum.test(
 ```
 
 
-## Change in number of heachade days two sample ttest 
+##  Outcome #3: Change in number of headache days Code (two sample ttest)
+
 ```{r}
 
 # Data for Topiramate
@@ -180,7 +182,7 @@ tsum.test(
 ```
 
 
-## Tolerability as Indicated by the Percentage of Participants that Completed the 24 weeks treatment Phase, doing fisher test 
+## Outcome #4: Tolerability as Indicated by the Percentage of Participants that Completed the 24 weeks Treatment Phase Code (Fisher Test)
 
 ```{r}
 # For Topiramate vs Placebo 
@@ -219,7 +221,7 @@ fisher_result_together <- fisher.test(outcome4.together)
 print(fisher_result_together)
 ```
 
-## Occurence of Treatment Emergent Serious Adverse Effects fisher test 
+## Outcome 5: Occurence of Treatment Emergent Serious Adverse Effects Code (Fisher Test)
 ```{r}
 # For Topiramate vs Placebo 
 outcome5.top <- matrix(c(141, 4, 70, 2 ), nrow = 2, byrow = TRUE)
