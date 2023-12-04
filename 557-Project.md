@@ -2,6 +2,7 @@
 ================
 
 ``` r
+# Load Libraries
 library(tibble)
 library(BSDA)
 ```
@@ -25,7 +26,14 @@ rownames(outcome1.top) <- c("Topiramate", "Placebo")
 colnames(outcome1.top) <- c("No Reduction in Headaches", "Reduction in Headaches")
 
 outcome1.top <- as.data.frame(outcome1.top)
+print(outcome1.top)
+```
 
+    ##            No Reduction in Headaches Reduction in Headaches
+    ## Topiramate                        58                     72
+    ## Placebo                           26                     40
+
+``` r
 fisher_result_top <- fisher.test(outcome1.top)
 print(fisher_result_top)
 ```
@@ -50,7 +58,14 @@ rownames(outcome1.ami) <- c("Amitriptyline", "Placebo")
 colnames(outcome1.ami) <- c("No Reduction in Headaches", " Reduction in Headaches")
 
 outcome1.ami <- as.data.frame(outcome1.ami)
+print(outcome1.ami)
+```
 
+    ##               No Reduction in Headaches  Reduction in Headaches
+    ## Amitriptyline                        63                      69
+    ## Placebo                              26                      40
+
+``` r
 fisher_result_ami <- fisher.test(outcome1.ami)
 print(fisher_result_ami)
 ```
@@ -76,7 +91,14 @@ rownames(outcome1.together) <- c("Topiramate", "Amitriptyline")
 colnames(outcome1.together) <- c("No Reduction in Headaches", " Reduction in Headaches")
 
 outcome1.together <- as.data.frame(outcome1.together)
+print(outcome1.together)
+```
 
+    ##               No Reduction in Headaches  Reduction in Headaches
+    ## Topiramate                           58                      72
+    ## Amitriptyline                        63                      69
+
+``` r
 fisher_result_together <- fisher.test(outcome1.together)
 print(fisher_result_together)
 ```
@@ -305,7 +327,14 @@ rownames(outcome4.top) <- c("Topiramate", "Placebo")
 colnames(outcome4.top) <- c("Not Tolerable", " Tolerable")
 
 outcome4.top <- as.data.frame(outcome4.top)
+print(outcome4.top)
+```
 
+    ##            Not Tolerable  Tolerable
+    ## Topiramate            28        102
+    ## Placebo                7         59
+
+``` r
 fisher_result_top <- fisher.test(outcome4.top)
 print(fisher_result_top)
 ```
@@ -330,7 +359,14 @@ rownames(outcome4.ami) <- c("Amitriptyline", "Placebo")
 colnames(outcome4.ami) <- c("Not Tolerable", " Tolerable")
 
 outcome4.ami <- as.data.frame(outcome4.ami)
+print(outcome4.ami)
+```
 
+    ##               Not Tolerable  Tolerable
+    ## Amitriptyline            26        106
+    ## Placebo                   7         59
+
+``` r
 fisher_result_ami <- fisher.test(outcome4.ami)
 print(fisher_result_ami)
 ```
@@ -356,7 +392,14 @@ rownames(outcome4.together) <- c("Topiramate", "Amitriptyline")
 colnames(outcome4.together) <- c(" Not tolerable", "Tolerable")
 
 outcome4.together <- as.data.frame(outcome4.together)
+print(outcome4.together)
+```
 
+    ##                Not tolerable Tolerable
+    ## Topiramate                28       102
+    ## Amitriptyline             26       106
+
+``` r
 fisher_result_together <- fisher.test(outcome4.together)
 print(fisher_result_together)
 ```
@@ -383,7 +426,14 @@ rownames(outcome5.top) <- c("Topiramate", "Placebo")
 colnames(outcome5.top) <- c("No Serious Adverse Effect", "Serious Adverse Effect")
 
 outcome5.top <- as.data.frame(outcome5.top)
+print(outcome5.top)
+```
 
+    ##            No Serious Adverse Effect Serious Adverse Effect
+    ## Topiramate                       141                      4
+    ## Placebo                           70                      2
+
+``` r
 fisher_result_top <- fisher.test(outcome5.top)
 print(fisher_result_top)
 ```
@@ -409,7 +459,14 @@ rownames(outcome5.ami) <- c("Amitriptyline", "Placebo")
 colnames(outcome5.ami) <- c("No Serious Adverse Effect", " Serious Adverse Effect")
 
 outcome5.ami <- as.data.frame(outcome5.ami)
+print(outcome5.ami)
+```
 
+    ##               No Serious Adverse Effect  Serious Adverse Effect
+    ## Amitriptyline                       138                       6
+    ## Placebo                              70                       2
+
+``` r
 fisher_result_ami <- fisher.test(outcome5.ami)
 print(fisher_result_ami)
 ```
@@ -435,7 +492,14 @@ rownames(outcome5.together) <- c("Topiramate", "Amitriptyline")
 colnames(outcome5.together) <- c("No Serious Adverse Effect", " Serious Adverse Effect")
 
 outcome5.together <- as.data.frame(outcome5.together)
+print(outcome5.together)
+```
 
+    ##               No Serious Adverse Effect  Serious Adverse Effect
+    ## Topiramate                          141                       4
+    ## Amitriptyline                       138                       6
+
+``` r
 fisher_result_together <- fisher.test(outcome5.together)
 print(fisher_result_together)
 ```
